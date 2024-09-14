@@ -19,12 +19,15 @@ for (const topping of toppings){
 
 // Modo Oscuro
 
-function mode(el){
-  el.target.classList.toggle("dark");
+function mode(){
+  for (const topping of toppings){    
+    topping.classList.toggle("dark");                                   //
+  }     
+  button.classList.toggle("dark");
   title.classList.toggle("dark");
   paragraph.classList.toggle("dark");
-
 }
+
 button.addEventListener("click", mode);
 
 
